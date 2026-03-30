@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 240" width="380" height="240">
+  <style>
+    text { font-family: sans-serif; font-size: 13px; fill: #4a3d65; font-weight: bold; }
+    .small { font-size: 11px; font-weight: normal; fill: #7a6aa0; }
+  </style>
+  <!-- Left: circle with inscribed equilateral triangle -->
+  <g transform="translate(100,120)">
+    <circle cx="0" cy="0" r="75" fill="none" stroke="#4a3d65" stroke-width="1.5"/>
+    <!-- Equilateral triangle inscribed, top vertex at top -->
+    <polygon points="0,-75 64.95,37.5 -64.95,37.5" fill="#d8cef0" fill-opacity="0.4" stroke="#d4986a" stroke-width="2"/>
+    <text class="small" x="-10" y="5">r</text>
+    <line x1="0" y1="0" x2="0" y2="-75" stroke="#b8a8d0" stroke-width="1" stroke-dasharray="4,3"/>
+    <circle cx="0" cy="0" r="2.5" fill="#4a3d65"/>
+    <text x="-35" y="85">正三角形</text>
+  </g>
+
+  <!-- Right: circle with inscribed regular hexagon -->
+  <g transform="translate(280,120)">
+    <circle cx="0" cy="0" r="75" fill="none" stroke="#4a3d65" stroke-width="1.5"/>
+    <!-- Regular hexagon inscribed -->
+    <polygon points="0,-75 64.95,-37.5 64.95,37.5 0,75 -64.95,37.5 -64.95,-37.5" fill="#d8cef0" fill-opacity="0.4" stroke="#d4986a" stroke-width="2"/>
+    <text class="small" x="-10" y="5">r</text>
+    <line x1="0" y1="0" x2="0" y2="-75" stroke="#b8a8d0" stroke-width="1" stroke-dasharray="4,3"/>
+    <circle cx="0" cy="0" r="2.5" fill="#4a3d65"/>
+    <text x="-35" y="85">正六角形</text>
+  </g>
+
+  <!-- Title -->
+  <text x="120" y="18" style="font-size:12px; fill:#7a6aa0; font-weight:normal;">半径 r の円に内接</text>
+</svg>

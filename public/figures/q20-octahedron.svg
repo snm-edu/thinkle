@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" width="400" height="240">
+  <style>
+    text { font-family: sans-serif; font-size: 13px; fill: #4a3d65; }
+    .label { font-weight: bold; fill: #d4986a; font-size: 14px; }
+    .edge-label { font-size: 12px; fill: #7a6aa0; }
+    line, polygon { stroke: #4a3d65; fill: none; stroke-width: 1.5; }
+    polygon.filled { fill: #f0ebfa; }
+  </style>
+  <!-- Row of 4 upward triangles + 4 downward triangles (octahedron net) -->
+  <!-- Top row: triangles pointing up -->
+  <polygon class="filled" points="50,130 100,40 150,130"/>
+  <polygon class="filled" points="150,130 200,40 250,130"/>
+  <polygon class="filled" points="250,130 300,40 350,130"/>
+  <!-- Bottom row: triangles pointing down -->
+  <polygon class="filled" points="50,130 150,130 100,220"/>
+  <polygon class="filled" points="150,130 250,130 200,220"/>
+  <polygon class="filled" points="250,130 350,130 300,220"/>
+  <!-- Extra top triangles (inverted, filling gaps) -->
+  <polygon class="filled" points="100,40 200,40 150,130"/>
+  <polygon class="filled" points="200,40 300,40 250,130"/>
+  <!-- Edge labels -->
+  <text class="label" x="42" y="88">A</text>
+  <text class="label" x="345" y="88">B</text>
+  <text class="edge-label" x="68" y="38">1</text>
+  <text class="edge-label" x="145" y="38">2</text>
+  <text class="edge-label" x="232" y="38">3</text>
+  <text class="edge-label" x="310" y="38">4</text>
+  <text class="edge-label" x="60" y="185">5</text>
+  <text class="edge-label" x="155" y="185">6</text>
+  <text class="edge-label" x="255" y="185">7</text>
+  <text class="edge-label" x="335" y="185">8</text>
+</svg>

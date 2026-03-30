@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 180" width="340" height="180">
+  <style>
+    text { font-family: sans-serif; font-size: 13px; fill: #4a3d65; font-weight: bold; }
+    .label { font-size: 11px; fill: #7a6aa0; font-weight: normal; }
+    .seat { fill: #f0ebfa; stroke: #b8a8d0; stroke-width: 2; rx: 6; }
+    .table { fill: #d8cef0; fill-opacity: 0.3; stroke: #b8a8d0; stroke-width: 1.5; rx: 8; }
+  </style>
+  <!-- Table -->
+  <rect class="table" x="50" y="60" width="240" height="60"/>
+  <text class="label" x="140" y="95">テーブル</text>
+
+  <!-- Top row (one side) -->
+  <text class="label" x="135" y="18">男性側</text>
+  <rect class="seat" x="55" y="22" width="70" height="32"/>
+  <text x="78" y="44" style="fill:#d4986a;">左</text>
+  <rect class="seat" x="135" y="22" width="70" height="32"/>
+  <text x="155" y="44" style="fill:#d4986a;">中央</text>
+  <rect class="seat" x="215" y="22" width="70" height="32"/>
+  <text x="238" y="44" style="fill:#d4986a;">右</text>
+
+  <!-- Bottom row (other side) -->
+  <text class="label" x="135" y="155">女性側</text>
+  <rect class="seat" x="55" y="126" width="70" height="32"/>
+  <text x="78" y="148" style="fill:#d4986a;">左</text>
+  <rect class="seat" x="135" y="126" width="70" height="32"/>
+  <text x="155" y="148" style="fill:#d4986a;">中央</text>
+  <rect class="seat" x="215" y="126" width="70" height="32"/>
+  <text x="238" y="148" style="fill:#d4986a;">右</text>
+
+  <!-- Arrows showing facing -->
+  <line x1="160" y1="56" x2="160" y2="62" stroke="#b8a8d0" stroke-width="1"/>
+  <line x1="180" y1="118" x2="180" y2="124" stroke="#b8a8d0" stroke-width="1"/>
+</svg>

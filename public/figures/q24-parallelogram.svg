@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" width="400" height="280">
+  <style>
+    text { font-family: sans-serif; font-size: 14px; fill: #4a3d65; font-weight: bold; }
+    .small { font-size: 11px; font-weight: normal; fill: #7a6aa0; }
+    line { stroke: #4a3d65; stroke-width: 1.5; }
+    .dashed { stroke-dasharray: 5,4; stroke: #b8a8d0; stroke-width: 1; }
+  </style>
+  <!-- Parallelogram ABCD -->
+  <!-- A=top-left, B=bottom-left, C=bottom-right, D=top-right -->
+  <line x1="120" y1="40" x2="60" y2="240"/>
+  <line x1="60" y1="240" x2="340" y2="240"/>
+  <line x1="340" y1="240" x2="400" y2="40"/>
+  <line x1="400" y1="40" x2="120" y2="40"/>
+  <!-- Points E, F on AD (trisection) -->
+  <!-- A(120,40) D(400,40) → E at 1/3, F at 2/3 -->
+  <!-- Actually AD is the top side. AE=EF=FC means on side AD... -->
+  <!-- Let me reconsider: ABCD parallelogram, A top-left, B bottom-left -->
+  <!-- AE=EF=FC → points on side AC (diagonal)? No... -->
+  <!-- Re-reading: AE=EF=FC → E,F trisect AC. AG=BG → G midpoint AB. BJ=CJ → J midpoint BC -->
+  <!-- A=top-left(80,40), B=bottom-left(40,230), C=bottom-right(320,230), D=top-right(360,40) -->
+  <!-- E = 1/3 from A to C: (80+80,40+63.3) = (160,103) -->
+  <!-- F = 2/3 from A to C: (240, 167) -->
+  <!-- G = midpoint AB: (60, 135) -->
+  <!-- J = midpoint BC: (180, 230) -->
+  <!-- H = intersection of EG extended and DJ? -->
+  <!-- I = intersection of FJ extended and something? -->
+
+  <!-- Redraw properly -->
+  <!-- A(80,40) B(40,230) C(320,230) D(360,40) -->
+  <line x1="80" y1="40" x2="40" y2="230" stroke="#4a3d65" stroke-width="2"/>
+  <line x1="40" y1="230" x2="320" y2="230" stroke="#4a3d65" stroke-width="2"/>
+  <line x1="320" y1="230" x2="360" y2="40" stroke="#4a3d65" stroke-width="2"/>
+  <line x1="360" y1="40" x2="80" y2="40" stroke="#4a3d65" stroke-width="2"/>
+
+  <!-- Diagonal AC -->
+  <line x1="80" y1="40" x2="320" y2="230" class="dashed"/>
+
+  <!-- E (1/3 of AC) -->
+  <circle cx="160" cy="103" r="3" fill="#d4986a"/>
+  <text x="165" y="97">E</text>
+
+  <!-- F (2/3 of AC) -->
+  <circle cx="240" cy="167" r="3" fill="#d4986a"/>
+  <text x="245" y="161">F</text>
+
+  <!-- G (midpoint AB) -->
+  <circle cx="60" cy="135" r="3" fill="#d4986a"/>
+  <text x="38" y="130">G</text>
+
+  <!-- J (midpoint BC) -->
+  <circle cx="180" cy="230" r="3" fill="#d4986a"/>
+  <text x="175" y="252">J</text>
+
+  <!-- Lines GD and EJ to find H -->
+  <line x1="60" y1="135" x2="360" y2="40" class="dashed"/>
+  <!-- Line EJ -->
+  <line x1="160" y1="103" x2="180" y2="230" class="dashed"/>
+  <!-- Line GJ to find intersections for H, I -->
+  <line x1="60" y1="135" x2="180" y2="230" class="dashed"/>
+  <!-- Line FJ -->
+  <line x1="240" y1="167" x2="180" y2="230" class="dashed"/>
+
+  <!-- H (intersection area) -->
+  <circle cx="148" cy="132" r="3" fill="#d4986a"/>
+  <text x="130" y="127">H</text>
+
+  <!-- I (intersection area) -->
+  <circle cx="192" cy="195" r="3" fill="#d4986a"/>
+  <text x="197" y="190">I</text>
+
+  <!-- Vertex labels -->
+  <text x="68" y="32" style="font-size:16px">A</text>
+  <text x="22" y="245" style="font-size:16px">B</text>
+  <text x="322" y="248" style="font-size:16px">C</text>
+  <text x="362" y="32" style="font-size:16px">D</text>
+
+  <!-- Annotations -->
+  <text class="small" x="100" y="65">AE=EF=FC</text>
+  <text class="small" x="15" y="165">AG=BG</text>
+  <text class="small" x="230" y="252">BJ=CJ</text>
+</svg>

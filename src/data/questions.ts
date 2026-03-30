@@ -224,6 +224,7 @@ export const questions: Question[] = [
     id: 3,
     areaId: 3,
     text: 'A〜Fの6人が円卓に等間隔に座った。次のことがわかっている。確実にいえるのはどれか。\n\n・AとBは隣り合っている\n・CとDは向かい合っている\n・EはAの隣ではない\n・FはBの隣',
+    figure: { type: 'image', content: 'figures/q3-circle-table.svg' },
     choices: [
       { label: 'a', text: 'AとDは隣り合っている' },
       { label: 'b', text: 'BとCは向かい合っている' },
@@ -294,6 +295,7 @@ export const questions: Question[] = [
     id: 14,
     areaId: 3,
     text: 'A氏、B氏、C氏、D嬢、E嬢、F嬢の男女各3人ずつがテーブルの両側に3人ずつ座っている。次のことがわかっている。\n\n・男女は向かい合わせに座っている\n・A氏の向かいはD嬢ではない\n・B氏はC氏の隣\n・E嬢は右端\n\n確実にいえるのはどれか。',
+    figure: { type: 'image', content: 'figures/q14-table.svg' },
     choices: [
       { label: 'a', text: 'A氏の向かいはE嬢' },
       { label: 'b', text: 'B氏の向かいはD嬢' },
@@ -317,7 +319,8 @@ export const questions: Question[] = [
   {
     id: 15,
     areaId: 3,
-    text: 'A〜Fの6人が2階建ての6つの部屋からなる寮に住んでいる。\n\n| 201 | 202 | 203 |\n| 101 | 102 | 103 |\n\n・Aの隣にはEが住んでいる\n・Eの下の部屋はDである\n・Bの隣の上はEが住んでいる\n\nこのとき確実にいえるのはどれか。',
+    text: 'A〜Fの6人が2階建ての6つの部屋からなる寮に住んでいる。\n\n・Aの隣にはEが住んでいる\n・Eの下の部屋はDである\n・Bの隣の上はEが住んでいる\n\nこのとき確実にいえるのはどれか。',
+    figure: { type: 'image', content: 'figures/q15-rooms.svg' },
     choices: [
       { label: 'a', text: 'Aは201に住んでいる' },
       { label: 'b', text: 'Bは102に住んでいる' },
@@ -440,7 +443,8 @@ export const questions: Question[] = [
   {
     id: 13,
     areaId: 5,
-    text: 'A〜Fの6人の身長はこの順に高くなっており、Aが一番低くFが一番高い。6人が教壇に向かって座るのに、前よりは後ろが高く、右よりは左が高くなるように座りたい。全員の座り方は何通りあるか。\n\n（前列3席・後列3席、左が高い側、後ろが高い側）',
+    text: 'A〜Fの6人の身長はこの順に高くなっており、Aが一番低くFが一番高い。6人が教壇に向かって座るのに、前よりは後ろが高く、右よりは左が高くなるように座りたい。全員の座り方は何通りあるか。',
+    figure: { type: 'image', content: 'figures/q13-seats.svg' },
     choices: [
       { label: 'a', text: '5通り' },
       { label: 'b', text: '8通り' },
@@ -464,7 +468,8 @@ export const questions: Question[] = [
   {
     id: 20,
     areaId: 5,
-    text: '下の図は正八面体の展開図である。この展開図を組み立てたとき、A、Bのそれぞれの辺と重なる辺はどこか。A、Bの重なる数字の差を求めよ。\n\n（展開図：上段に三角形が並び、辺にA,B,1〜8の番号がついている）',
+    text: '下の図は正八面体の展開図である。この展開図を組み立てたとき、A、Bのそれぞれの辺と重なる辺はどこか。A、Bの重なる数字の差を求めよ。',
+    figure: { type: 'image', content: 'figures/q20-octahedron.svg' },
     choices: [
       { label: 'a', text: '5' },
       { label: 'b', text: '4' },
@@ -484,6 +489,7 @@ export const questions: Question[] = [
     id: 24,
     areaId: 5,
     text: '図において AE=EF=FC、AG=BG、BJ=CJ の平行四辺形ABCDがある。平行四辺形ABCDの面積は△HBIの面積の何倍になるか。',
+    figure: { type: 'image', content: 'figures/q24-parallelogram.svg' },
     choices: [
       { label: 'a', text: '20倍' },
       { label: 'b', text: '21倍' },
@@ -502,7 +508,8 @@ export const questions: Question[] = [
   {
     id: 28,
     areaId: 5,
-    text: '次の図で、直線ℓとmは平行である。xは何度になるか。\n\n（図：ℓ上に45°、折れ線でx°、70°、32°、17°を経てmに至る）',
+    text: '次の図で、直線ℓとmは平行である。xは何度になるか。',
+    figure: { type: 'image', content: 'figures/q28-parallel-lines.svg' },
     choices: [
       { label: 'a', text: '90°' },
       { label: 'b', text: '93°' },
@@ -522,6 +529,7 @@ export const questions: Question[] = [
     id: 30,
     areaId: 5,
     text: '半径rの円に内接する正三角形と正六角形の面積比はどのようになるか。',
+    figure: { type: 'image', content: 'figures/q30-inscribed.svg' },
     choices: [
       { label: 'a', text: '3:8' },
       { label: 'b', text: '3:5' },

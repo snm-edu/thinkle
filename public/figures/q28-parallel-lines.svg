@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 300" width="380" height="300">
+  <style>
+    text { font-family: sans-serif; font-size: 13px; fill: #4a3d65; }
+    .angle { font-size: 12px; fill: #d4986a; font-weight: bold; }
+    .line-label { font-size: 15px; font-weight: bold; font-style: italic; }
+    line { stroke: #4a3d65; stroke-width: 1.5; }
+    .parallel { stroke-width: 2; }
+    path { stroke: #b8a8d0; fill: none; stroke-width: 1; }
+  </style>
+  <!-- Line l (top) -->
+  <line x1="20" y1="50" x2="360" y2="50" class="parallel"/>
+  <text class="line-label" x="365" y="54">l</text>
+
+  <!-- Line m (bottom) -->
+  <line x1="20" y1="260" x2="360" y2="260" class="parallel"/>
+  <text class="line-label" x="365" y="264">m</text>
+
+  <!-- Zigzag line from l to m -->
+  <!-- Point on l -->
+  <circle cx="100" cy="50" r="3" fill="#4a3d65"/>
+  <!-- 45 degree angle at l -->
+  <line x1="100" y1="50" x2="170" y2="120"/>
+  <path d="M 115,50 A 20,20 0 0,1 106,66"/>
+  <text class="angle" x="118" y="68">45°</text>
+
+  <!-- Bend point 1 -->
+  <circle cx="170" cy="120" r="3" fill="#4a3d65"/>
+  <line x1="170" y1="120" x2="120" y2="180"/>
+  <path d="M 158,112 A 18,18 0 0,1 163,133"/>
+  <text class="angle" x="175" y="130">x°</text>
+
+  <!-- Bend point 2 -->
+  <circle cx="120" cy="180" r="3" fill="#4a3d65"/>
+  <line x1="120" y1="180" x2="220" y2="220"/>
+  <path d="M 132,188 A 18,18 0 0,0 125,168"/>
+  <text class="angle" x="98" y="175">70°</text>
+
+  <!-- Bend point 3 -->
+  <circle cx="220" cy="220" r="3" fill="#4a3d65"/>
+  <line x1="220" y1="220" x2="180" y2="260"/>
+  <path d="M 208,214 A 16,16 0 0,1 216,232"/>
+  <text class="angle" x="225" y="232">32°</text>
+
+  <!-- Point on m -->
+  <circle cx="180" cy="260" r="3" fill="#4a3d65"/>
+  <path d="M 168,260 A 16,16 0 0,1 176,247"/>
+  <text class="angle" x="150" y="253">17°</text>
+
+  <!-- Parallel markers -->
+  <line x1="50" y1="46" x2="55" y2="50" stroke="#7a6aa0" stroke-width="1"/>
+  <line x1="55" y1="46" x2="60" y2="50" stroke="#7a6aa0" stroke-width="1"/>
+  <line x1="50" y1="256" x2="55" y2="260" stroke="#7a6aa0" stroke-width="1"/>
+  <line x1="55" y1="256" x2="60" y2="260" stroke="#7a6aa0" stroke-width="1"/>
+</svg>

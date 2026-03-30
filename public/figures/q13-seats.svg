@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" width="320" height="180">
+  <style>
+    text { font-family: sans-serif; font-size: 12px; fill: #4a3d65; }
+    .dir { font-size: 11px; fill: #7a6aa0; }
+    rect.seat { fill: #f0ebfa; stroke: #b8a8d0; stroke-width: 2; rx: 6; }
+    rect.board { fill: #d8cef0; stroke: #b8a8d0; stroke-width: 1.5; rx: 4; }
+  </style>
+  <!-- Direction labels -->
+  <text class="dir" x="5" y="95">高い</text>
+  <text class="dir" x="285" y="95">低い</text>
+  <line x1="38" y1="90" x2="54" y2="90" stroke="#b8a8d0" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="282" y1="90" x2="268" y2="90" stroke="#b8a8d0" stroke-width="1" marker-end="url(#arr)"/>
+  <defs>
+    <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6" fill="#b8a8d0"/>
+    </marker>
+  </defs>
+
+  <!-- Blackboard -->
+  <rect class="board" x="80" y="10" width="160" height="28"/>
+  <text x="130" y="30" style="font-size:13px; fill:#7a6aa0;">教壇</text>
+
+  <!-- Front row (closer to board) -->
+  <text class="dir" x="275" y="75">前列</text>
+  <rect class="seat" x="80" y="55" width="50" height="40"/>
+  <text x="95" y="80" style="font-size:14px; font-weight:bold; fill:#d4986a;">?</text>
+  <rect class="seat" x="140" y="55" width="50" height="40"/>
+  <text x="155" y="80" style="font-size:14px; font-weight:bold; fill:#d4986a;">?</text>
+  <rect class="seat" x="200" y="55" width="50" height="40"/>
+  <text x="215" y="80" style="font-size:14px; font-weight:bold; fill:#d4986a;">?</text>
+
+  <!-- Back row -->
+  <text class="dir" x="275" y="135">後列</text>
+  <rect class="seat" x="80" y="115" width="50" height="40"/>
+  <text x="95" y="140" style="font-size:14px; font-weight:bold; fill:#d4986a;">?</text>
+  <rect class="seat" x="140" y="115" width="50" height="40"/>
+  <text x="155" y="140" style="font-size:14px; font-weight:bold; fill:#d4986a;">?</text>
+  <rect class="seat" x="200" y="115" width="50" height="40"/>
+  <text x="215" y="140" style="font-size:14px; font-weight:bold; fill:#d4986a;">?</text>
+
+  <text class="dir" x="80" y="170">左(高)        右(低)</text>
+</svg>

@@ -178,6 +178,15 @@ export default function QuizScreen() {
           <div className="text-library-dark text-[15px] leading-relaxed whitespace-pre-wrap">
             {renderTextWithBreaksAndTables(question.text)}
           </div>
+          {question.figure?.type === 'image' && (
+            <div className="mt-4 flex justify-center">
+              <img
+                src={`${import.meta.env.BASE_URL}${question.figure.content}`}
+                alt="問題の図"
+                className="max-w-full h-auto rounded border border-library-brown/10"
+              />
+            </div>
+          )}
         </div>
 
         {/* Hint display */}
