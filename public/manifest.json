@@ -1,0 +1,18 @@
+{
+  "name": "Thinkle ～不思議な図書館からの脱出～",
+  "short_name": "Thinkle",
+  "description": "思考力トレーニングの脱出パズルゲーム",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f8f5ff",
+  "theme_color": "#f8f5ff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
