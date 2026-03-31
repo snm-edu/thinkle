@@ -138,8 +138,7 @@ export default function MapScreen() {
                       🔑 {correctCount}/{totalCount}
                     </span>
                     <span className="text-xs text-library-gold">
-                      {'★'.repeat(Math.min(totalStars, maxStars))}
-                      {'☆'.repeat(Math.max(maxStars - totalStars, 0))}
+                      ⭐ {totalStars}/{maxStars}
                     </span>
                   </div>
                 )}
