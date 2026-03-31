@@ -1,4 +1,5 @@
 import { useGameStore } from './stores/gameStore'
+import { useBgm } from './hooks/useBgm'
 import TitleScreen from './screens/TitleScreen'
 import PrologueScreen from './screens/PrologueScreen'
 import MapScreen from './screens/MapScreen'
@@ -10,6 +11,7 @@ import EndingScreen from './screens/EndingScreen'
 
 export default function App() {
   const screen = useGameStore((s) => s.screen)
+  useBgm()
 
   const renderScreen = () => {
     switch (screen) {
