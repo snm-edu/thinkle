@@ -18,11 +18,6 @@ export default function AreaClearScreen() {
   // Check if all 6 areas are cleared
   const allCleared = areaData.every((a) => areasProgress[a.id]?.cleared)
 
-  const starDisplay = (count: number, max: number) => {
-    const filled = Math.min(count, max)
-    return '★'.repeat(filled) + '☆'.repeat(Math.max(max - filled, 0))
-  }
-
   if (!area) {
     return (
       <div className="flex-1 flex items-center justify-center bg-library-cream text-library-dark">
@@ -60,13 +55,17 @@ export default function AreaClearScreen() {
       </div>
 
       {/* Stars earned */}
-      <div className="relative z-10 bg-library-paper border border-library-light rounded-xl px-6 py-5 mb-8 text-center shadow">
-        <p className="text-library-dark/60 text-xs font-bold tracking-wider mb-2">
+      <div className="relative z-10 bg-library-paper border border-library-light rounded-xl px-6 py-5 mb-8 text-center shadow w-full max-w-xs">
+        <p className="text-library-dark/60 text-xs font-bold tracking-wider mb-3">
           獲得した星
         </p>
-        <p className="text-3xl text-library-gold leading-none mb-2 tracking-wider">
-          {starDisplay(areaStars, maxStars)}
-        </p>
+        <div className="flex justify-center gap-1 flex-wrap mb-3">
+          {Array.from({ length: maxStars }, (_, i) => (
+            <span key={i} className={`text-xl ${i < areaStars ? 'text-library-gold' : 'text-library-light'}`}>
+              {i < areaStars ? '★' : '☆'}
+            </span>
+          ))}
+        </div>
         <p className="text-library-gold-light text-lg font-bold">
           {areaStars} / {maxStars}
         </p>
