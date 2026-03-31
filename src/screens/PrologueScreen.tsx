@@ -52,13 +52,14 @@ export default function PrologueScreen() {
   const setScreen = useGameStore((s) => s.setScreen)
   const [visibleCount, setVisibleCount] = useState(1)
   const scrollRef = useRef<HTMLDivElement>(null)
+  const bottomRef = useRef<HTMLDivElement>(null)
 
   const isLast = visibleCount >= messages.length
 
   useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollTop = scrollRef.current.scrollHeight
-    }
+    requestAnimationFrame(() => {
+      bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
+    })
   }, [visibleCount])
 
   const handleNext = () => {
@@ -93,6 +94,7 @@ export default function PrologueScreen() {
             <MessageBubble speaker={msg.speaker as Speaker} text={msg.text} />
           </div>
         ))}
+        <div ref={bottomRef} />
       </div>
 
       {/* Action button */}
